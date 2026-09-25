@@ -137,7 +137,7 @@ function saveTodos() {
 
 function getdb() {
     var currentUser = document.getElementById("currentUser")
-    currentUser.innerText = `Welcome ${localStorage.getItem("NAME")}`
+    currentUser.innerText = `Welcome ${localStorage.getItem("name")}`
 
     todoList = JSON.parse(localStorage.getItem("todos")) || []
     renderTodos()
